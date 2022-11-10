@@ -229,7 +229,11 @@ else if (typeof isAdult === 'number' && isAdult > 18) {
 else {
     console.log("Введіть, будь ласка, цифрове значення. Наприклад: 34.");
 }
+
+/*
 b)
+*/
+
 let x = prompt("What is your age? Are you already 18?");
 let isAdult = x * 1
 result = (isAdult > 18) ? "Ви досягли повнолітнього віку." : 'Ви ще надто молоді';
