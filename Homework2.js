@@ -1,16 +1,17 @@
+/*
 HOMEWORK2
 
 Task1
 
 1.	Є такий код:
 2.	Допишіть код, щоб в консолі браузера з'явилися рядки, які написані в коментарях, оперуючи при цьому змінними х і у.
-
 let x = 1;
 let y = 2;
 
 let res1 = // Допишіть код, необхідно використовувати змінні x і y
 console.log(res1); // "12"
 console.log(typeof res1); // "string"
+*/
 
 let x = 1;
 let y = 2;
@@ -19,9 +20,11 @@ let res1 = x + '' + y;
 console.log(res1);
 console.log(typeof res1);
 
+/*
 let res2 = // Допишіть код, необхідно використовувати змінні x і y
 console.log(res2); // "true2"
 console.log(typeof res2); // "string"
+*/
 
 let x = 1;
 let y = 2;
@@ -30,9 +33,11 @@ let res2 = (typeof x == 'number') + '' + y;
 console.log(res2);
 console.log(typeof res2);
 
+/*
 let res3 = // Допишіть код, необхідно використовувати змінні x і y
 console.log(res3); // true
 console.log(typeof res3); // "boolean"
+*/
 
 let x = 1;
 let y = 2;
@@ -41,9 +46,13 @@ let res3 = x < y;
 console.log(res3);
 console.log(typeof res3);
 
+/*
 let res4 = // Допишіть код, необхідно використовувати змінні x і y
 console.log(res4); // NaN
 console.log(typeof res4); // "number"
+*/
+
+
 let x = 1;
 let y = 2;
 let res4 = (y/(x - x))/(y/(x - x));
@@ -63,6 +72,7 @@ console.log(typeof res6);
 console.log(res7);
 console.log(typeof res7);
 
+/*
 __________________________________
 
 Task2
@@ -72,6 +82,8 @@ Task2
 	b) кратним числу 7.
 Результат перевірки вивести в консоль.
 а)
+*/
+
 let input = prompt("What is your number?");
 input = input * 1
 if ((isNaN(input)) == true) {
@@ -90,8 +102,10 @@ else {
 console.log("Number is NOT divided on 2 or 7 without the rest");
 }
 
-
+/* 
 b)
+*/
+
 let c = prompt("What is your number?");
 let input = c * 1
 if (typeof input === 'number' && input %2 == 0){
@@ -108,6 +122,7 @@ else {
 console.log("Please enter a number in digits. Example: 12445");
 }
 
+/*
 _____________________________________________________________
 
 Task3
@@ -122,6 +137,8 @@ Task3
 7) Виведіть на екран п'ятий елемент масиву.
 8) Видаліть 1-ий елемент масиву і виведіть масив на екран.
 a)
+*/
+
 const arr = [];
 arr[0] = 0;
 arr[1] = "String";
@@ -133,6 +150,7 @@ alert(arr[4]);
 arr.shift();
 console.log(arr);
 
+/*
 ______________________________________________________
 
 Task4
@@ -142,6 +160,8 @@ let cities = ["Rome", "Lviv", "Warsaw"];
 Результат:
 "Rome*Lviv*Warsaw"
 a)
+*/
+
 let cities = ["Rome", "Lviv", "Warsaw"];
 let i = 0;
 let text = "";
@@ -151,7 +171,10 @@ while (cities[i]) {
 }
 console.log(text.slice(0,16));
 
+/*
 b)
+*/
+
 let cities = ["Rome", "Lviv", "Warsaw"];
 let i = 0;
 let text = "";
@@ -162,7 +185,10 @@ do {
 while (cities[i]) 
 console.log(text.slice(0,16));
 
+/*
 c)
+*/
+
 let cities = ["Rome", "Lviv", "Warsaw"];
 let text = "";
 for (let i = 0; i < cities.length; i++)
@@ -170,7 +196,10 @@ for (let i = 0; i < cities.length; i++)
 }
 console.log(text.slice(0,16));
 
+/*
 d)
+*/
+
 let cities = ["Rome", "Lviv", "Warsaw"];
 let text = "";
 for (let i in cities) { 
@@ -178,6 +207,7 @@ for (let i in cities) {
 }
 console.log(text.slice(0,16));
 
+/*
 _____________________________________________________________
 
 Task5
@@ -185,6 +215,8 @@ Task5
 5. Використовуючи функцію prompt() задайте користувачу питання про досягнення ним повнолітнього віку. Результат запишіть в змінну isAdult. В залежності від отриманого значення виведіть відповідне повідомлення про статус особи. Наприклад: при виконанні умови вік більше 18 вивести “Ви досягли повнолітнього віку”. Якщо вік менше 18 років вивести “Ви ще надто молоді”, 
 
 а)
+*/
+
 let isAdult = prompt("What is your age? Are you already 18?");
 
 isAdult = isAdult * 1
@@ -203,16 +235,18 @@ let isAdult = x * 1
 result = (isAdult > 18) ? "Ви досягли повнолітнього віку." : 'Ви ще надто молоді';
 console.log(result);
 
-
+/*
 _____________________________________________________________
 
-Task6
+Task 6
 6. Користувач вводить три довжини сторін трикутника (використовуйте prompt () три рази для введення кожної сторони).
 Необхідно 
 	a) визначити і вивести в консоль площу трикутника 
 	b) перевірити чи цей трикутник є прямокутним і вивести в консоль результат перевірки.
 Здійснювати перевірку чи введені користувачем значення коректні, в іншому випадку вивести 'Incorrect data‘. Результат обчислення площі трикутника виводити в консоль з точністю 3 знаки після коми (наприклад:  8.42355465 =>  8.424).  
 a)
+*/
+
 let a = prompt("What is legth of the first side?");
 let b = prompt("What is legth of the second side?");
 let c = prompt("What is legth of the third side?");
@@ -253,6 +287,7 @@ else {
     console.log("The triangular has the squere of " + square + " squere meters.");
 }
 
+/*
 __________________________________________________________________________
 
 Task7
@@ -264,6 +299,8 @@ Task7
 В діапазоні годин 17-23 – має виводитися привітання “Доброго вечора”.
 
 a)
+*/
+
 let d = new Date();
 let time = d.getHours();
 console.log(time);
