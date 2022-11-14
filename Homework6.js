@@ -98,7 +98,7 @@ console.log(el3.innerText);
 /*
 b)	
 */
-/*
+
 let el1 = document.querySelectorAll('li')[0];
 console.log(el1.innerText);
 
